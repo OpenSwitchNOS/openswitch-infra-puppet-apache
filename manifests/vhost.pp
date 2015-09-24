@@ -42,6 +42,9 @@ define apache::vhost(
     $options            = $apache::params::options,
     $apache_name        = $apache::params::apache_name,
     $vhost_name         = $apache::params::vhost_name,
+    $ssl_cert_file      = '',
+    $ssl_key_file       = '',
+    $ssl_chain_file     = '',
     $extraconfig        = '',
   ) {
 
@@ -88,4 +91,3 @@ define apache::vhost(
     }
   }
 }
-
